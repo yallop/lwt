@@ -4,8 +4,8 @@ shallow_clone: true
 
 environment:
   global:
-    CYGWIN: C:\Cygwin
-    CYGSH: C:\Cygwin\bin\bash -lc
+    CYG_ROOT: C:\Cygwin
+    CYG_BASH: C:\Cygwin\bin\bash -lc
   matrix:
     - COMPILER: 4.01.0
       SYSTEM: cygwin
