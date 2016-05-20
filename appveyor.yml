@@ -7,11 +7,14 @@ environment:
     CYG_ROOT: C:\Cygwin
     CYG_BASH: C:\Cygwin\bin\bash -lc
   matrix:
-    - COMPILER: 4.01.0
-      SYSTEM: cygwin
+    - COMPILER: 4.01.0+mingw64c
+      SYSTEM: mingw
 
-    - COMPILER: 4.02.3
-      SYSTEM: cygwin
+    - COMPILER: 4.02.3+mingw64c
+      SYSTEM: mingw
+
+    - COMPILER: 4.03.0+mingw64c
+      SYSTEM: mingw
 
 install:
   - utils\appveyor-%SYSTEM%-install.bat
